@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="quizWithTimerDisplay.js" ></script>
+    <link rel="stylesheet" href="styling.css">
+    <title>Fun Facts Quiz</title>
+    
+</head>
+<body>
+
+    <h1>Fun Facts Quiz</h1>
+
+    <form id="quizForm" autocomplete="off">  <!-- autocomplete set to off, so browser will not keep the answers in memory -->
+        <div class="question" id="q1" >
+            <p>1. What is the largest planet in our solar system?</p>
+            <label>
+                <input type="radio" name="q1" value="Earth"> a) Earth
+            </label>
+            <label>
+                <input type="radio" name="q1" value="Jupiter"> b) Jupiter
+            </label>
+            <label>
+                <input type="radio" name="q1" value="Mars"> c) Mars
+            </label>
+        </div>
+
+        <div class="question" id="q2">
+            <p>2. How many continents are there on Earth?</p>
+            <label>
+                <input type="radio" name="q2" value="5"> a) 5
+            </label>
+            <label>
+                <input type="radio" name="q2" value="6"> b) 6
+            </label>
+            <label>
+                <input type="radio" name="q2" value="7"> c) 7
+            </label>
+        </div>
+
+        <div class="question" id="q3">
+            <p>3. What is the capital of France?</p>
+            <label>
+                <input type="radio" name="q3" value="London"> a) London
+            </label>
+            <label>
+                <input type="radio" name="q3" value="Paris"> b) Paris
+            </label>
+            <label>
+                <input type="radio" name="q3" value="Berlin"> c) Berlin
+            </label>
+        </div>
+
+        <div class="question" id="q4">
+            <p>4. Which planet is known as the Red Planet?</p>
+            <label>
+                <input type="radio" name="q4" value="Venus"> a) Venus
+            </label>
+            <label>
+                <input type="radio" name="q4" value="Mars"> b) Mars
+            </label>
+            <label>
+                <input type="radio" name="q4" value="Jupiter"> c) Jupiter
+            </label>
+        </div>
+
+        <div class="question" id="q5">
+            <p>5. What is the largest mammal in the world?</p>
+            <label>
+                <input type="radio" name="q5" value="Elephant"> a) Elephant
+            </label>
+            <label>
+                <input type="radio" name="q5" value="Blue Whale"> b) Blue Whale
+            </label>
+            <label>
+                <input type="radio" name="q5" value="Giraffe"> c) Giraffe
+            </label>
+        </div>
+
+        <div id="timer">Time left: 15 seconds</div>
+
+
+        <button type="button" onclick="submitQuiz()">Submit</button>
+    </form>
+
+    
+
+    
+
+</body>
+</html>
